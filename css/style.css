@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+body{
+  background: #010b62;
+}
+
+.card{
+  width: 90%;
+  max-width: 470px;
+  background: linear-gradient(140deg, #6bbfd1, #261bcb);
+  color: #fff;
+  margin: 100px auto 100px;
+  border-radius: 20px;
+  padding: 40px 35px;
+  text-align: center;
+}
+
+.search{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search input{
+  border: 0;
+  outline: 0;
+  background: #ffc7f5;
+  color: rgb(0, 5, 5);
+  padding: 10px 25px;
+  height: 60px;
+  border-radius: 30px;
+  flex: 1;
+  margin-right: 16px;
+  font-size: 18px;
+}
+
+.search button{
+  border: 0;
+  outline: 0;
+  background: #ffc7f5;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.search button img{
+  width: 19px;
+}
+
+.weather img{
+  width: 55%;
+  padding-bottom: 20px;
+  align-items: center;
+}
+
+.weather-icon{
+  width: 170px;
+  margin-top: 30px;
+}
+.details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: auto 20px auto 20px;
+  margin-top: 60px;
+  margin-left: 35px;
+}
+.weather h1{
+  font-size: 70px;
+  color: rgb(243, 203, 233);
+}
+.weather h2{
+  font-size: 25px;
+  margin-top: -10px;
+  color: rgb(243, 203, 233);
+}
+.search input:hover{
+  box-shadow: 0 4px 16px rgba(55, 1, 51, 0.581);
+  transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.search button:hover{
+  box-shadow: 0 4px 16px rgba(55, 1, 51, 0.581);
+  transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.col{
+  display: flex;
+  align-items: center;
+  text-align: left;
+  color: rgb(243, 203, 233);
+  font-weight: 500;
+}
+.col img{
+  width: 20%;
+ margin-right: 10px;
+}
+.humidity, .wind{
+  font-size: 28px;
+  margin-top: -6px;
+}
+.weather{
+  display: none;
+}
+.error{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: none;
+  color: #450303;
+}
+.error img{
+  width: 75%;
+  margin-top: 30px;
+  align-items: center;
+}
